@@ -1,0 +1,143 @@
+body {
+  background-color: #000;
+  color: #ff0000;
+  font-family: 'Courier New', Courier, monospace;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header Styling */
+header {
+  width: 100%;
+  padding: 1rem;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000;
+}
+
+header h1 {
+  margin: 0;
+  color: #ff0000;
+  font-size: 1.5rem;
+  font-family: 'Arial Black', sans-serif;
+}
+
+.sign-in,
+.sign-out {
+  cursor: pointer;
+  color: #ff0000;
+  border: 1px solid #ff0000;
+  padding: 0.5rem 1rem;
+  margin-left: 1rem;
+  background-color: transparent;
+  font-size: 1rem;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.sign-out {
+  background-color: #ff0000;
+  color: #000;
+}
+
+.sign-out:hover,
+.sign-in:hover {
+  background-color: #ff0000;
+  color: #000;
+}
+
+/* Chat Room Styling */
+.chat-room {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.message {
+  display: flex;
+  align-items: flex-start;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 8px;
+  max-width: 100%;
+}
+
+.sent {
+  background-color: #400000;
+  justify-content: flex-start;
+}
+
+.received {
+  background-color: #220000; /* Darker red for received messages */
+  justify-content: flex-start;
+}
+
+.displayname {
+  margin: 0;
+  margin-bottom: 5px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.messageText {
+  margin-top: 0px;
+  margin-left: 10px;
+  color: #ff0000;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.sent img,
+.received img {
+  width: 37px;
+  height: 37px;
+  border-radius: 50%;
+  margin-right: 5px;
+  margin-left: 10px;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  padding: 10px;
+  width: 50%;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  outline: none;
+  transform: translateX(-50%);
+}
+
+input {
+  font-size: 15px;
+  flex: 1;
+  padding: 0.8rem;
+  margin: 1rem;
+  border: none;
+  border-radius: 10px;
+  background-color: #220000;
+  color: #ff0000;
+  outline: none;
+}
+
+.enter {
+  font-size: 14px;
+  font-weight: bold;
+  padding: 10px 20px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+  background-color: #ff6666; /* Dark red for send button */
+  color: #000;
+  transition: all 0.3s ease;
+}
+
+.enter:hover {
+  transform: translateY(-2px);
+  box-shadow: 0px 3px 5px rgba(255, 0, 0, 0.5);
+}
