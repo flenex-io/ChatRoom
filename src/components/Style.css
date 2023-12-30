@@ -23,6 +23,12 @@ header h1 {
   font-family: 'Arial Black', sans-serif;
 }
 
+h2{
+  display: flex;
+  justify-content: center;
+  margin-top: 20%;
+}
+
 .sign-in,
 .sign-out {
   cursor: pointer;
