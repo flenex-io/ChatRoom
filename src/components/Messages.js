@@ -112,12 +112,8 @@ function ChatRoom() {
   }, [messages]);
 
   return (
-    <>
-      <main>
-        {messages && messages.map((msg) => <ChatMessage key={msg.id} message={msg} />)}
-        <span ref={dummy}></span>
-      </main>
-
+    <div className="App">
+      <section className="chat-section">
         <form onSubmit={sendMessage}>
           <input
             value={formValue}
@@ -125,8 +121,15 @@ function ChatRoom() {
             placeholder="Type your message"
           />
         </form>
-    </>
+
+        <main>
+          {messages && messages.map((msg) => <ChatMessage key={msg.id} message={msg} />)}
+          <span ref={dummy}></span>
+        </main>
+      </section>
+    </div>
   );
+
 }
 
 function ChatMessage(props) {
