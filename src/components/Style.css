@@ -6,7 +6,6 @@ body {
   padding: 0;
 }
 
-/* Header Styling */
 header {
   width: 100%;
   padding: 1rem;
@@ -48,7 +47,6 @@ header h1 {
   color: #000;
 }
 
-/* Chat Room Styling */
 .chat-room {
   display: flex;
   flex-direction: column;
@@ -72,7 +70,7 @@ header h1 {
 }
 
 .received {
-  background-color: #220000; /* Darker red for received messages */
+  background-color: #220000;
   justify-content: flex-start;
 }
 
@@ -111,7 +109,6 @@ form {
   bottom: 0;
   left: 50%;
   outline: none;
-  /* margin-bottom: 20px; */
   transform: translateX(-50%);
 }
 
@@ -139,12 +136,11 @@ input {
   border: none;
   border-radius: 5px;
   text-transform: uppercase;
-  background-color: #ff6666; /* Dark red for send button */
+  background-color: #ff0000;
   color: #000;
   transition: all 0.3s ease;
 }
 
 .enter:hover {
   transform: translateY(-2px);
-  box-shadow: 0px 3px 5px rgba(255, 0, 0, 0.5);
 }
