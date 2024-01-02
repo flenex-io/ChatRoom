@@ -28,3 +28,5 @@ cd ChatRoom
 npm start
 ```
 
+## Open for contribution
+
