@@ -16,8 +16,15 @@ To run this application, you will need the following:
 git clone https://github.com/flenex-io/ChatRoom.git
 ```
 
-2. Run `npm install` to install the dependencies.
-3. Create a `.env` file in the root directory of the project and add the following environment variables:
-4. Replace the values of the environment variables with your own Firebase project information.
-5. Run `npm start` to start the development server.
+2. Change the directory
+```
+cd ChatRoom
+```
+
+3. Paste your firebase config  in Message.js
+
+4. Run the project
+```
+npm start
+```
 
